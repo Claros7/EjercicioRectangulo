@@ -20,9 +20,12 @@ namespace EjercicioRectangulo
     /// </summary>
     public partial class MainWindow : Window
     {
+        public Rectangulo Rectangulo { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+            Rectangulo = new Rectangulo { x1 = "5", x2 = "5", y1 = "3", y2 = "3" };
+            this.DataContext = Rectangulo;
         }
     }
 }
